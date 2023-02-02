@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .5s;
+}
+
+:root {
+    --ligth-cyan: hsl(193, 38%, 86%);
+    --neon-green: hsl(150, 100%, 66%);
+}
+
+.main-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: radial-gradient(circle, #ff8928, #ff7830, #ff673a, #ff5544, #ff414e);
+    font-family: "Manrope", sans-serif;
+}
+
+.card-container {
+    margin: auto;
+    max-width: 550px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.card-container:hover {
+    transform: translateY(-5px);
+    transition: all 1s;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+}
+
+h1 {
+    color: #000;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    word-spacing: 4px;
+    letter-spacing: 0.5px;
+}
+
+
+h2 {
+    color: hsl(150, 100%, 66%);
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+.line {
+    width: 400px;
+    height: 2px;
+    border-radius: 50px;
+    background-color: #091f36;
+    margin-bottom: -40px;
+    box-shadow: inset -10px -10px 15px rgba(255, 255, 255, 0.5), 
+           inset 10px 10px 15px rgba(70, 70, 70, 0.12);
+}
+
+#btn {
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: var(--neon-green);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    top: 62px;
+  }
+
+#btn img {
+    background-color: var(--neon-green);
+    width: 2.5rem;
+}
+
+#btn:hover {
+  box-shadow: 0px 0px 40px hsl(150, 100%, 66%);
+  transition: all .5s;
+  cursor: pointer;
+}
+
+@media only screen and ( width<600px) {
+    .card-container {
+        margin: 1rem;
+    }
+}
+
